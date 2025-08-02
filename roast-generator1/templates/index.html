@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roast Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="background"></div>
+
+  <div id="start-screen">
+    <button id="start-btn">Start Roast Generator</button>
+  </div>
+
+  <div id="main-ui" class="hidden">
+    <textarea id="user-input" placeholder="Apna content likho..."></textarea>
+    <div id="category-tabs" class="tabs">
+      <!-- Categories will be injected by JS -->
+    </div>
+    <div id="category-description"></div>
+    <button id="generate-btn">Generate Roast</button>
+    <div id="output-box"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
